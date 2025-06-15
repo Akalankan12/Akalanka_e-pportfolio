@@ -2,267 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nimesh Akalanka - Aspiring Data Scientist and Undergraduate at University of Peradeniya. Skilled in Python, Data Science, and Machine Learning." />
+  <meta name="keywords" content="Data Science, Python, Statistics, Portfolio, Machine Learning, Nimesh Akalanka" />
+  <meta name="author" content="Nimesh Akalanka" />
   <title>Nimesh Akalanka | Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-      font-family: 'Segoe UI', sans-serif;
-    }
 
-    body {
-      background-color: #121212;
-      color: #e0e0e0;
-    }
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    header {
-      background: #1f1f2e;
-      padding: 15px 20px;
-      box-shadow: 0 2px 4px #000;
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 
-    .logo {
-      font-size: 24px;
-      color: #00d1b2;
-      font-weight: bold;
-    }
+  <!-- Lottie Web -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  <!-- AOS Animate On Scroll CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    .nav-links li a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .nav-links li a:hover {
-      color: #00d1b2;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #000428, #004e92);
-      color: white;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      flex-direction: column;
-      padding: 20px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      color: #ccc;
-    }
-
-    .profile-photo {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 4px solid #00d1b2;
-      object-fit: cover;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      margin-bottom: 20px;
-    }
-
-    .section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 32px;
-      color: #00d1b2;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    ul li {
-      margin: 10px 0;
-      line-height: 1.6;
-    }
-
-    a {
-      color: #00c3ff;
-      text-decoration: underline;
-    }
-
-    .skill {
-      margin-bottom: 20px;
-    }
-
-    .skill label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .bar {
-      width: 100%;
-      background: #2c2c2c;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .progress {
-      background: #00d1b2;
-      height: 15px;
-      border-radius: 10px;
-    }
-
-    footer {
-      text-align: center;
-      background: #1f1f2e;
-      color: white;
-      padding: 15px 0;
-      margin-top: 50px;
-    }
-
-    .cert-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.cert-item {
-  width: 200px;
-  text-align: center;
-}
-
-.cert-item img {
-  width: 100%;
-  border: 2px solid #00d1b2;
-  border-radius: 8px;
-  transition: transform 0.3s;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-}
-
-.cert-item img:hover {
-  transform: scale(1.05);
-}
-
-.cert-item p {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #ccc;
-}
-
-  </style>
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
+  <div class="container">
+    <nav class="sidebar" aria-label="Main Navigation">
       <div class="logo">Nimesh</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
+      <ul>
+        <li><a href="#about" class="active">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
 
-  <section class="hero">
-    <img src="profile.jpg" alt="Nimesh Akalanka" class="profile-photo"/>
-    <h1>Nimesh Akalanka</h1>
-    <p>Aspiring Data Scientist | Undergraduate at UoP</p>
-  </section>
+    <main class="content">
+      <div class="hero">
+        <div id="robot-lottie" aria-label="Animated robot graphic"></div>
+        <div class="intro-text">
+          <h1>Nimesh Akalanka</h1>
+          <h3>Aspiring Data Scientist | Undergraduate at University of Peradeniya</h3>
+          <p>Passionate about machine learning, optimization, and data-driven solutions.</p>
+        </div>
+      </div>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am currently pursuing a BSc (Hons) in Statistics and Operations Research at the University of Peradeniya. I am passionate about machine learning, optimization, and solving real-world problems with data.</p>
-  </section>
+      <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>I am pursuing a BSc (Hons) in Statistics and Operations Research at University of Peradeniya. Skilled in Python, data science, and machine learning techniques.</p>
+      </section>
 
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <ul>
-      <li>University of Peradeniya – BSc (Hons) in Statistics & Operations Research</li>
-    </ul>
-  </section>
+      <section id="education" data-aos="fade-up">
+        <h2>Education</h2>
+        <ul>
+          <li>BSc (Hons) Statistics & Operations Research - University of Peradeniya</li>
+        </ul>
+      </section>
 
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skill">
-      <label>Python</label>
-      <div class="bar"><div class="progress" style="width: 85%;"></div></div>
-    </div>
-    <div class="skill">
-      <label>R / RStudio</label>
-      <div class="bar"><div class="progress" style="width: 75%;"></div></div>
-    </div>
-    <div class="skill">
-      <label>Machine Learning</label>
-      <div class="bar"><div class="progress" style="width: 70%;"></div></div>
-    </div>
-    <div class="skill">
-      <label>HTML / CSS</label>
-      <div class="bar"><div class="progress" style="width: 65%;"></div></div>
-    </div>
-  </section>
+      <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skill-bar">
+          <p>Python</p>
+          <div class="bar"><div class="progress" data-progress="90%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <p>Data Science</p>
+          <div class="bar"><div class="progress" data-progress="80%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <p>HTML/CSS</p>
+          <div class="bar"><div class="progress" data-progress="70%"></div></div>
+        </div>
+      </section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Room 2240</strong> – A public file-sharing web platform.
-        <br/>
-        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">View Project Files on Google Drive</a>
-      </li>
-      <li><strong>Cab Service Website</strong> – Custom online booking platform with driver profiles.
-        <br/>
-        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">Cab Project Files</a>
-      </li>
-    </ul>
-  </section>
+      <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Room 2240</strong> – A public file-sharing web platform.<br />
+            <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank" rel="noopener noreferrer">View Project Files</a>
+          </li>
+          <li><strong>Cab Service Website</strong> – Online booking platform with driver profiles.<br />
+            <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank" rel="noopener noreferrer">View Project Files</a>
+          </li>
+        </ul>
+      </section>
 
-  <section id="certificates" class="section">
-  <h2>My Certificates</h2>
-  <div class="cert-gallery">
-    <div class="cert-item">
-      <a href="https://drive.google.com/file/d/YOUR_CERT_1_ID/view" target="_blank">
-        <img src="cert1_thumb.jpg" alt="Certificate 1">
-      </a>
-      <p>Machine Learning Certificate</p>
-    </div>
-    <div class="cert-item">
-      <a href="https://drive.google.com/file/d/YOUR_CERT_2_ID/view" target="_blank">
-        <img src="cert2_thumb.jpg" alt="Certificate 2">
-      </a>
-      <p>Data Science Workshop</p>
-    </div>
+      <section id="certificates" data-aos="fade-up">
+        <h2>Certificates</h2>
+        <div class="cert-gallery">
+          <div class="cert-item">
+            <a href="https://drive.google.com/file/d/YOUR_CERT_1_ID/view" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="cert1_thumb.jpg" alt="Machine Learning Certificate" />
+            </a>
+            <p>Machine Learning Certificate</p>
+          </div>
+          <div class="cert-item">
+            <a href="https://drive.google.com/file/d/YOUR_CERT_2_ID/view" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" src="cert2_thumb.jpg" alt="Data Science Workshop" />
+            </a>
+            <p>Data Science Workshop</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:akalankan88@gmail.com">akalankan88@gmail.com</a></p>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required aria-label="Name" />
+          <input type="email" name="email" placeholder="Your Email" required aria-label="Email" />
+          <textarea name="message" placeholder="Your Message" rows="4" required aria-label="Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
   </div>
-</section>
-
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:akalankan88@gmail.com">akalankan88@gmail.com</a></p>
-  </section>
 
   <footer>
-    <p>&copy; 2025 Nimesh Akalanka. All rights reserved.</p>
+    &copy; <span id="year"></span> Nimesh Akalanka. All rights reserved.
   </footer>
+
+  <!-- JS Scripts -->
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.progress').forEach(bar => {
+        bar.style.width = bar.dataset.progress;
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+
+    lottie.loadAnimation({
+      container: document.getElementById('robot-lottie'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://assets2.lottiefiles.com/packages/lf20_tno6cg2w.json'
+    });
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav.sidebar ul li a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 70;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
 </body>
 </html>
